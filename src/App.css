@@ -1,38 +1,211 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar{
+  height:70px;
+  display: flex;
+  align-items:center;
+  background-color:white;
+  margin-bottom:30px;
+}
+
+.navbar h2{
+  text-decoration: none;
+  padding: 20px;
+}
+
+.Login{
+  background-color: #AFBDE9;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.Login h1{
   text-align: center;
+  padding:20px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form{
+  width: 25%;
+  min-height:370px;
+  max-height: 60%;
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form > div{
+  width: 100%; height:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form input{
+  width: 100%;
+  background-color: #F6F6F6;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+
+.form h3{
+  align-self: flex-start;
+ 
+}
+
+.form button{
+  padding:10px 60px 10px 60px;
+  outline: none;
+  border: none;
+  background-color: #AFBDE9;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.inputdiv{
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.inputdiv p{
+  color: red;
+}
+
+.signupinput{
+  width: 100%;
+}
+
+.select-diary{
+  background-color: #AFBDE9;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+
+.diary{
+  width: 30%;
+  height: 20%;
+  background-color:white;
+  margin-bottom:30px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.loader{
+  margin-left:20px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.publicDiaries{
+  background-color: #AFBDE9;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.publicDiaries i{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.publicDiaries h1{
+  text-align:center;
+  padding: 20px;
+  
+}
+
+.publicDiaries h2{
+  padding-bottom: 30px;
+}
+.publicDiaries h5{
+  padding-bottom: 30px;
+}
+.publicDiaries .diaries{
+  height:fit-content;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 30vw;
+  min-height:200px;
+  background-color:white;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+  padding:20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 20px;
+}
+
+
+.addpublic{
+  background-color: #AFBDE9;
+  min-height:100vh;
+  max-height: fit-content;
+  /* position: relative; */
+}
+
+.addpublic h1{
+  text-align: center;
+  padding: 20px;
+}
+
+.addpublic textarea{
+  margin-left: auto;
+  margin-right: auto;
+  /* position: absolute; */
+  width: 30vw;
+  min-height: 370px;
+  max-height: 30vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding:20px;
+  
+  
+}
+
+.addpublic button{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding:10px 60px 10px 60px;
+  outline: none;
+  border: none;
+  background-color: #3d4768;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 20px;
+  cursor: pointer;
+  color:white;
+}
+@media(max-width:998px){
+  .form{
+    width:90%
   }
-  to {
-    transform: rotate(360deg);
+  .diary{
+    width:90%
+  }
+  .card{
+    width:90vw;
+    margin-bottom: 20px;
+  }
+  .addpublic textarea{
+    width:95vw;
+    margin: 10px;
+    /* margin-left: 0%; */
+    transform: translateX(0%);
   }
 }
